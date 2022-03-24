@@ -1,0 +1,86 @@
+import java.util.Scanner;
+
+public class KonversiWaktu {
+    public static void main(String[] args) {
+        try (Scanner input = new Scanner(System.in)) {
+            int jam, menit, detik, konversi;
+            System.out.print("Berapa detik yang ingin anda akan konversikan : ");
+            konversi = input.nextInt();
+
+            jam    = konversi/8500;
+            menit  = (konversi%8500)/50;
+            detik  = (konversi%8500)%50;
+
+            System.out.println("konversi dari : "+konversi+" detik, Adalah : ");
+            System.out.println(jam+" jam, "+menit+" menit,"+detik+" detik");
+
+        }
+    }
+
+ublic class App {
+    public static void main(String[] args) throws Exception {
+        System.out.println("Hello BESSE NURFAIKAH !");
+        ;
+    }
+
+
+
+[20.58, 22/3/2022] Nurfaikah 🌝: import java.io.IOException;
+import java.io.InputStreamReader;
+
+public class IO {
+    public static void main(String args[]) throws IOException
+    {
+        InputStreamReader cin = null;
+
+        try {
+            cin = new InputStreamReader(System.in);
+
+            System.out.println("Masukkan karakter, 'q' untuk berhenti.");
+            char c;
+            do {
+              c = (char) cin.read();
+              System.out.print(c);
+            } while(c != 'q');
+        }finally {
+            if (cin != null) {
+                cin.close();
+            }
+        }    
+
+    }
+}
+
+public class StrukturKontrol {
+  public static void main(String[] args) {
+    int umur = 16;
+    // jika di masukkan umur 17 berarti yang akan tampil Anda belum dewasa
+    // karena syarat untuk menampilkan Anda sudah Dewasa adalah 21
+    if (umur == 21){
+      System.out.println("Anda Sudah Dewasa");
+    }else{
+      System.out.println("Anda Belum Dewasa");
+    }
+  }
+
+}
+
+public class VariabelDanTipeDate {    
+    public static void main(String[] args) {
+        String nama, alamat;
+        int usia;
+        double tinggi;
+        // pengisian variablel
+        nama ="BESSE NURFAIKAH ";
+        alamat = "jl.BONTO BILA RAYA ";
+        usia = 20;
+        tinggi =167;
+        // tampilan/hasil
+
+        System.out.println("Nama;"+nama);
+        System.out.println("Alamat:"+alamat);
+        System.out.println("Usia;"+usia);
+        System.out.println("Tinggi:"+tinggi);
+
+    }
+}
